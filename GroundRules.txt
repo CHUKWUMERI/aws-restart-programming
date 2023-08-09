@@ -1,0 +1,24 @@
+Python is a case sensitive language - "A" is not seen as "a"
+
+Variable are a way of storing value. Put simply it is a name that represent a value.
+
+Rules for Naming Variable in Python
+1. variable names should not have spaces - date of birth (invalid), date_of_birth (valid)
+2. variable names do not start with numbers - 12strong, 1hundred (invalid); strong_12, hundred1, ten10two (valid)
+3. variable names should not be the same with keywords or reserved words (identifiers)
+4. variable names cannot take in special characters - &^%$#@!~-)(/.,;'\][]
+
+When there is an opening there should also be a closing
+[ - opening; ] - closing
+" - opening; " - closing
+' - opening; ' - closing
+( - opening; ) - closing
+
+Errors Exist! Get used to them! 
+You would find the errors as an indication that you are not doing something right
+Common Errors you will encounter
+Name Error - The variable name you are trying to call has not been defined
+Syntax Error - You have violated the syntax of the language
+Type Error - The operation you are trying to carry out on that data type is not supported
+
+Scroll to the last line you will the type of error and further description 
