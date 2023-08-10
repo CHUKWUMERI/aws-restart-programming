@@ -18,7 +18,16 @@ Errors Exist! Get used to them!
 You would find the errors as an indication that you are not doing something right
 Common Errors you will encounter
 Name Error - The variable name you are trying to call has not been defined
-Syntax Error - You have violated the syntax of the language
+Syntax Error - You have violated the syntax / rules of the language
 Type Error - The operation you are trying to carry out on that data type is not supported
+Identation Error - This error lets you know that there is inconsistent indentation in your code
 
 Scroll to the last line you will the type of error and further description 
+
+
+Keywords in python can either be inbuilt functions or reserved words.
+Python allows you to use the inbuilt functions as identifiers (variable names), however, you will break the program if you do something
+To know the various inbuilt functions, you can visit the website: https://docs.python.org/3/library/functions.html
+
+Reserved words on the other hand are words that have a defined meaning in python. It does not allow you to use them as variable names
+To find the various reserved words in python, you can visit the website: https://initialcommit.com/blog/python-reserved-words
