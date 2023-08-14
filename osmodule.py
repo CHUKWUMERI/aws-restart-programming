@@ -14,6 +14,7 @@ def show_specific_files(directory, extension):
         if ext == extension:
             print(file)
 
+
 # show_specific_files('/home/meri', "ipynb") # Gets all jupyter notebook files in the folder
 print(os.getlogin())
 print(os.uname())
