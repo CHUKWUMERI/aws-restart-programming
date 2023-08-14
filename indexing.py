@@ -32,10 +32,10 @@ print(cars_price.get("BMW"))
 # The main difference between the get and square bracket method of indexing in dictionaries is
 # The get method does not return an error if the key does not exist unlike the square bracket method
 
-print(cars_price.get('bmw'))
+print(cars_price.get('bmw')) # This does not return an error because it is using the get method
 
 # This will return an error because there is no key called "bmw"
-# print(cars_price['bmw'])
+print(cars_price['bmw'])
 
 
 # Slicing - Does not work in dictionaries

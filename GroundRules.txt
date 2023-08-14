@@ -2,6 +2,7 @@ Python is a case sensitive language - "A" is not seen as "a"
 
 Variable are a way of storing value. Put simply it is a name that represent a value.
 
+
 Rules for Naming Variable in Python
 1. variable names should not have spaces - date of birth (invalid), date_of_birth (valid)
 2. variable names do not start with numbers - 12strong, 1hundred (invalid); strong_12, hundred1, ten10two (valid)
