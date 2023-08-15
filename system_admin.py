@@ -1,4 +1,5 @@
 import os
+import logging
 # when using python for system admin tasks, the libraries used are either os or subprocess
 
 
@@ -33,7 +34,6 @@ def package_manager():
         # Asking the user to add more packages
         more = input("Do you want to add more packages? Y: Yes N: No ").upper()
 
-        print(more)
         # This ensure the loop stops
         if more == 'N':
             done = True
@@ -41,11 +41,32 @@ def package_manager():
     packages = " ".join(list_of_packages)
 
     if IorR == 'install':
-        # os.system('sudo apt install {} -y'.format(packages))
+        # os.system('sudo apt-get install {} -y'.format(packages))
         print("Installed the packages {}".format(packages))
     else:
-        # os.system('sudo apt remove {} -y'.format(packages))
+        # os.system('sudo apt-get remove {} -y'.format(packages))
         print("Removed the packages {}".format(packages))
-    print(list_of_packages)
 
-package_manager()
+
+def clean_environment():
+    os.system('sudo apt-get autoremove') # remove dependencies for removed apps
+    os.system('sudo apt-get autoclean') # clean up obsolete packages
+
+# This will update the existing enviroment
+def update_environment():
+    os.system('sudo apt-get update')
+    os.system('sudo apt-get upgrade')
+    os.system('sudo apt-get dist-upgrade')
+
+# Configuring the logging library
+logging.basicConfig(format='%(asctime)s - %(message)s', filename='admin.log', level=logging.INFO)
+
+# package_manager()
+try:
+    clean_environment(90)
+except:
+    logging.info("clean_environment function failed to execute!")
+# update_environment()
+ 
+
+logging.info('File was run')
