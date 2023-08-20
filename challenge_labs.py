@@ -8,7 +8,7 @@ def check_prime(number):
 
 
 def check_list(values):
-    primes = []
+    primes = [2, 3]
     for val in values:
         if val % 2 == 0 or val % 3 == 0:
             continue
@@ -22,7 +22,9 @@ def check_list(values):
 
 
 
+print(check_list(range(2, 300)))
+
 # Saving the prime numbers to a file
-with open('results.txt', 'w+') as file:
-    for numb in check_list(range(2, 251)):
-        file.write(str(numb) + "\n")
+# with open('results.txt', 'w+') as file:
+#     for numb in check_list(range(2, 251)):
+#         file.write(str(numb) + "\n")
